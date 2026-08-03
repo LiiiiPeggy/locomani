@@ -1,0 +1,31 @@
+# ################################
+# 本地大文件与缓存（权重请从 Hugging Face 下载）
+# ################################
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# 模型权重与 ONNX（单文件超 GitHub 100MB 限制）
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.onnx
+models/**/onnx/
+models/**/.cache/
+*.incomplete
+
+# 嵌套仓库残留 / 编辑器
+**/.git/
+.DS_Store
+.vscode/
+.idea/
+*.swp
+.env
+.env.*
+# ################################

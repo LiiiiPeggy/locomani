@@ -1,0 +1,301 @@
+{
+  "model_path": "/home/gzz/Codes/smolvlm2/models/SmolVLM2-256M-Video-Instruct",
+  "device": "cuda",
+  "n_samples": 22,
+  "n_correct": 6,
+  "accuracy": 0.2727,
+  "load_s": 1.06,
+  "by_task": {
+    "meter_reading": {
+      "correct": 1,
+      "total": 4,
+      "accuracy": 0.25
+    },
+    "indicator_state": {
+      "correct": 1,
+      "total": 4,
+      "accuracy": 0.25
+    },
+    "floor_water": {
+      "correct": 1,
+      "total": 4,
+      "accuracy": 0.25
+    },
+    "window_state": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 0.4
+    },
+    "wall_crack": {
+      "correct": 1,
+      "total": 5,
+      "accuracy": 0.2
+    }
+  },
+  "results": [
+    {
+      "file": "01_meter/meter_daylight_digits_035259.jpg",
+      "task": "meter_reading",
+      "prompt_id": "P1",
+      "expected": "035259",
+      "raw": "03529.",
+      "pred": "03529",
+      "correct": false,
+      "infer_s": 0.986,
+      "error": "",
+      "notes": "digits from COCO annotations; decimal point ignored"
+    },
+    {
+      "file": "01_meter/meter_night_digits_20509.jpg",
+      "task": "meter_reading",
+      "prompt_id": "P1",
+      "expected": "20509",
+      "raw": "3624 20509 kwh",
+      "pred": "20509",
+      "correct": true,
+      "infer_s": 0.617,
+      "error": "",
+      "notes": "digits from COCO annotations; night condition"
+    },
+    {
+      "file": "01_meter/meter_tilted_digits_135104.jpg",
+      "task": "meter_reading",
+      "prompt_id": "P1",
+      "expected": "135104",
+      "raw": "135 10.4 kwh",
+      "pred": "135",
+      "correct": false,
+      "infer_s": 0.549,
+      "error": "",
+      "notes": "digits from COCO annotations; tilted view"
+    },
+    {
+      "file": "01_meter/meter_blurred_digits_53723.jpg",
+      "task": "meter_reading",
+      "prompt_id": "P1",
+      "expected": "53723",
+      "raw": "53729",
+      "pred": "53729",
+      "correct": false,
+      "infer_s": 0.503,
+      "error": "",
+      "notes": "digits from COCO annotations; blurred hard case"
+    },
+    {
+      "file": "02_indicator/indicator_green_on.jpg",
+      "task": "indicator_state",
+      "prompt_id": "P2",
+      "expected": "green_on",
+      "raw": "green_on",
+      "pred": "green_on",
+      "correct": true,
+      "infer_s": 0.69,
+      "error": "",
+      "notes": "green LED panel is visibly illuminated"
+    },
+    {
+      "file": "02_indicator/indicator_red_on.jpg",
+      "task": "indicator_state",
+      "prompt_id": "P2",
+      "expected": "red_on",
+      "raw": "green_on",
+      "pred": "green_on",
+      "correct": false,
+      "infer_s": 0.468,
+      "error": "",
+      "notes": "red LED panel is illuminated but occupies a small region"
+    },
+    {
+      "file": "02_indicator/indicator_off_black.jpg",
+      "task": "indicator_state",
+      "prompt_id": "P2",
+      "expected": "off",
+      "raw": "The image shows a white rectangular object that is placed on the ground, possibly a sign or a piece of paper. The object is not illuminated, and there is no visible light source. The background is a plain white wall, and the ground is covered with a light-colored, possibly beige or brown, ground cover",
+      "pred": "the",
+      "correct": false,
+      "infer_s": 1.176,
+      "error": "",
+      "notes": "unlit black panel"
+    },
+    {
+      "file": "02_indicator/indicator_blue_color_ambiguous.jpg",
+      "task": "indicator_state",
+      "prompt_id": "P2",
+      "expected": "uncertain",
+      "raw": "The image shows a car's dashboard with a blue object on the dashboard. The object is not clearly visible, but it is likely a light source that illuminates the dashboard.",
+      "pred": "the",
+      "correct": false,
+      "infer_s": 0.866,
+      "error": "",
+      "notes": "dataset class is blue but illumination is visually ambiguous"
+    },
+    {
+      "file": "03_floor_water/floor_water_yes_01.jpg",
+      "task": "floor_water",
+      "prompt_id": "P3",
+      "expected": "yes",
+      "raw": "no",
+      "pred": "no",
+      "correct": false,
+      "infer_s": 0.387,
+      "error": "",
+      "notes": "several visible wet patches"
+    },
+    {
+      "file": "03_floor_water/floor_water_yes_02.jpg",
+      "task": "floor_water",
+      "prompt_id": "P3",
+      "expected": "yes",
+      "raw": "no",
+      "pred": "no",
+      "correct": false,
+      "infer_s": 0.512,
+      "error": "",
+      "notes": "wet floor with motion blur"
+    },
+    {
+      "file": "03_floor_water/floor_water_yes_03.jpg",
+      "task": "floor_water",
+      "prompt_id": "P3",
+      "expected": "yes",
+      "raw": "no",
+      "pred": "no",
+      "correct": false,
+      "infer_s": 0.396,
+      "error": "",
+      "notes": "low-light hard positive"
+    },
+    {
+      "file": "03_floor_water/floor_water_no_dry.jpg",
+      "task": "floor_water",
+      "prompt_id": "P3",
+      "expected": "no",
+      "raw": "no",
+      "pred": "no",
+      "correct": true,
+      "infer_s": 0.391,
+      "error": "",
+      "notes": "dry dark floor with strong sunlight reflections"
+    },
+    {
+      "file": "04_window/window_open_01.jpg",
+      "task": "window_state",
+      "prompt_id": "P4",
+      "expected": "open",
+      "raw": "closed",
+      "pred": "closed",
+      "correct": false,
+      "infer_s": 0.401,
+      "error": "",
+      "notes": "clearly open casement window"
+    },
+    {
+      "file": "04_window/window_closed_01.jpg",
+      "task": "window_state",
+      "prompt_id": "P4",
+      "expected": "closed",
+      "raw": "closed",
+      "pred": "closed",
+      "correct": true,
+      "infer_s": 0.391,
+      "error": "",
+      "notes": "closed exterior shutters"
+    },
+    {
+      "file": "04_window/window_closed_02.jpg",
+      "task": "window_state",
+      "prompt_id": "P4",
+      "expected": "closed",
+      "raw": "closed",
+      "pred": "closed",
+      "correct": true,
+      "infer_s": 0.384,
+      "error": "",
+      "notes": "closed exterior window"
+    },
+    {
+      "file": "04_window/window_closed_building_03.jpg",
+      "task": "window_state",
+      "prompt_id": "P4",
+      "expected": "closed",
+      "raw": "The door is open.",
+      "pred": "open",
+      "correct": false,
+      "infer_s": 0.428,
+      "error": "",
+      "notes": "multiple closed windows; state manually verified"
+    },
+    {
+      "file": "04_window/window_closed_building_04.jpg",
+      "task": "window_state",
+      "prompt_id": "P4",
+      "expected": "closed",
+      "raw": "The door is open.",
+      "pred": "open",
+      "correct": false,
+      "infer_s": 0.564,
+      "error": "",
+      "notes": "multiple closed windows; state manually verified"
+    },
+    {
+      "file": "05_wall_crack/wall_crack_yes_01.jpg",
+      "task": "wall_crack",
+      "prompt_id": "P5",
+      "expected": "yes",
+      "raw": "no",
+      "pred": "no",
+      "correct": false,
+      "infer_s": 0.443,
+      "error": "",
+      "notes": "clear branching wall crack"
+    },
+    {
+      "file": "05_wall_crack/wall_crack_yes_02.jpg",
+      "task": "wall_crack",
+      "prompt_id": "P5",
+      "expected": "yes",
+      "raw": "no",
+      "pred": "no",
+      "correct": false,
+      "infer_s": 0.446,
+      "error": "",
+      "notes": "clear horizontal wall crack"
+    },
+    {
+      "file": "05_wall_crack/wall_crack_yes_03.jpg",
+      "task": "wall_crack",
+      "prompt_id": "P5",
+      "expected": "yes",
+      "raw": "No",
+      "pred": "no",
+      "correct": false,
+      "infer_s": 0.446,
+      "error": "",
+      "notes": "clear vertical wall crack"
+    },
+    {
+      "file": "05_wall_crack/wall_crack_yes_04.jpg",
+      "task": "wall_crack",
+      "prompt_id": "P5",
+      "expected": "yes",
+      "raw": "No",
+      "pred": "no",
+      "correct": false,
+      "infer_s": 0.438,
+      "error": "",
+      "notes": "wide branching wall crack"
+    },
+    {
+      "file": "05_wall_crack/wall_crack_no_normal.jpg",
+      "task": "wall_crack",
+      "prompt_id": "P5",
+      "expected": "no",
+      "raw": "No",
+      "pred": "no",
+      "correct": true,
+      "infer_s": 0.404,
+      "error": "",
+      "notes": "normal wall with picture-frame edges as hard negatives"
+    }
+  ]
+}

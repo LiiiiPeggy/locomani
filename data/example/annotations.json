@@ -1,0 +1,30 @@
+[
+  {
+    "type": "image",
+    "image": "images/sample_001.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\n这张图里设备是什么状态？"
+      },
+      {
+        "from": "gpt",
+        "value": "运行中"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "video": "videos/sample_001.mp4",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<video>\n请判断视频中设备的状态。"
+      },
+      {
+        "from": "gpt",
+        "value": "待机"
+      }
+    ]
+  }
+]

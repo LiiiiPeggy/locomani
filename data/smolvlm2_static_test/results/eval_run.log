@@ -1,0 +1,37 @@
+Model: /home/gzz/Codes/smolvlm2/models/SmolVLM2-256M-Video-Instruct
+Device: cuda
+Samples: 22
+Load time: 1.06s
+[01/22] FAIL 01_meter/meter_daylight_digits_035259.jpg | exp=035259 pred='03529' (0.99s)
+[02/22] OK 01_meter/meter_night_digits_20509.jpg | exp=20509 pred='20509' (0.62s)
+[03/22] FAIL 01_meter/meter_tilted_digits_135104.jpg | exp=135104 pred='135' (0.55s)
+[04/22] FAIL 01_meter/meter_blurred_digits_53723.jpg | exp=53723 pred='53729' (0.50s)
+[05/22] OK 02_indicator/indicator_green_on.jpg | exp=green_on pred='green_on' (0.69s)
+[06/22] FAIL 02_indicator/indicator_red_on.jpg | exp=red_on pred='green_on' (0.47s)
+[07/22] FAIL 02_indicator/indicator_off_black.jpg | exp=off pred='the' (1.18s)
+[08/22] FAIL 02_indicator/indicator_blue_color_ambiguous.jpg | exp=uncertain pred='the' (0.87s)
+[09/22] FAIL 03_floor_water/floor_water_yes_01.jpg | exp=yes pred='no' (0.39s)
+[10/22] FAIL 03_floor_water/floor_water_yes_02.jpg | exp=yes pred='no' (0.51s)
+[11/22] FAIL 03_floor_water/floor_water_yes_03.jpg | exp=yes pred='no' (0.40s)
+[12/22] OK 03_floor_water/floor_water_no_dry.jpg | exp=no pred='no' (0.39s)
+[13/22] FAIL 04_window/window_open_01.jpg | exp=open pred='closed' (0.40s)
+[14/22] OK 04_window/window_closed_01.jpg | exp=closed pred='closed' (0.39s)
+[15/22] OK 04_window/window_closed_02.jpg | exp=closed pred='closed' (0.38s)
+[16/22] FAIL 04_window/window_closed_building_03.jpg | exp=closed pred='open' (0.43s)
+[17/22] FAIL 04_window/window_closed_building_04.jpg | exp=closed pred='open' (0.56s)
+[18/22] FAIL 05_wall_crack/wall_crack_yes_01.jpg | exp=yes pred='no' (0.44s)
+[19/22] FAIL 05_wall_crack/wall_crack_yes_02.jpg | exp=yes pred='no' (0.45s)
+[20/22] FAIL 05_wall_crack/wall_crack_yes_03.jpg | exp=yes pred='no' (0.45s)
+[21/22] FAIL 05_wall_crack/wall_crack_yes_04.jpg | exp=yes pred='no' (0.44s)
+[22/22] OK 05_wall_crack/wall_crack_no_normal.jpg | exp=no pred='no' (0.40s)
+
+==== SUMMARY ====
+Accuracy: 6/22 = 27.3%
+  meter_reading: 1/4 = 25.0%
+  indicator_state: 1/4 = 25.0%
+  floor_water: 1/4 = 25.0%
+  window_state: 2/5 = 40.0%
+  wall_crack: 1/5 = 20.0%
+Wrote: /home/gzz/Codes/smolvlm2/data/smolvlm2_static_test/results/eval_results.json
+Wrote: /home/gzz/Codes/smolvlm2/data/smolvlm2_static_test/results/eval_results.csv
+Wrote: /home/gzz/Codes/smolvlm2/data/smolvlm2_static_test/results/eval_report.md

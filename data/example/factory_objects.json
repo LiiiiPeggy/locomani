@@ -1,0 +1,26 @@
+[
+  {
+    "name": "泵A",
+    "factory": "一厂",
+    "location": "一车间东侧",
+    "status": "运行中"
+  },
+  {
+    "name": "阀门B",
+    "factory": "一厂",
+    "location": "二车间管道区",
+    "status": "关闭"
+  },
+  {
+    "name": "电机C",
+    "factory": "二厂",
+    "location": "装配线3号工位",
+    "status": "待机"
+  },
+  {
+    "name": "传送带D",
+    "factory": "二厂",
+    "location": "包装车间入口",
+    "status": "故障"
+  }
+]

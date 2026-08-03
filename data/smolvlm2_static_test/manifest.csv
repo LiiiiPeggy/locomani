@@ -1,0 +1,23 @@
+file,task,expected,prompt_id,source,license,notes
+01_meter/meter_daylight_digits_035259.jpg,meter_reading,035259,P1,https://data.mendeley.com/datasets/fnn44p4mj8/1,CC0-1.0,digits from COCO annotations; decimal point ignored
+01_meter/meter_night_digits_20509.jpg,meter_reading,20509,P1,https://data.mendeley.com/datasets/fnn44p4mj8/1,CC0-1.0,digits from COCO annotations; night condition
+01_meter/meter_tilted_digits_135104.jpg,meter_reading,135104,P1,https://data.mendeley.com/datasets/fnn44p4mj8/1,CC0-1.0,digits from COCO annotations; tilted view
+01_meter/meter_blurred_digits_53723.jpg,meter_reading,53723,P1,https://data.mendeley.com/datasets/fnn44p4mj8/1,CC0-1.0,digits from COCO annotations; blurred hard case
+02_indicator/indicator_green_on.jpg,indicator_state,green_on,P2,https://universe.roboflow.com/inspiration-robotx-workspace/rgb-led-panel,CC-BY-4.0,green LED panel is visibly illuminated
+02_indicator/indicator_red_on.jpg,indicator_state,red_on,P2,https://universe.roboflow.com/inspiration-robotx-workspace/rgb-led-panel,CC-BY-4.0,red LED panel is illuminated but occupies a small region
+02_indicator/indicator_off_black.jpg,indicator_state,off,P2,https://universe.roboflow.com/inspiration-robotx-workspace/rgb-led-panel,CC-BY-4.0,unlit black panel
+02_indicator/indicator_blue_color_ambiguous.jpg,indicator_state,uncertain,P2,https://universe.roboflow.com/inspiration-robotx-workspace/rgb-led-panel,CC-BY-4.0,dataset class is blue but illumination is visually ambiguous
+03_floor_water/floor_water_yes_01.jpg,floor_water,yes,P3,https://universe.roboflow.com/projet-industrie/water-puddles-du0za,CC-BY-4.0,several visible wet patches
+03_floor_water/floor_water_yes_02.jpg,floor_water,yes,P3,https://universe.roboflow.com/projet-industrie/water-puddles-du0za,CC-BY-4.0,wet floor with motion blur
+03_floor_water/floor_water_yes_03.jpg,floor_water,yes,P3,https://universe.roboflow.com/projet-industrie/water-puddles-du0za,CC-BY-4.0,low-light hard positive
+03_floor_water/floor_water_no_dry.jpg,floor_water,no,P3,https://commons.wikimedia.org/wiki/File:Empty_apartment_room_with_corner_windows.jpg,CC-BY-SA-3.0,dry dark floor with strong sunlight reflections
+04_window/window_open_01.jpg,window_state,open,P4,https://commons.wikimedia.org/wiki/File:Open_window.jpg,CC0-1.0,clearly open casement window
+04_window/window_closed_01.jpg,window_state,closed,P4,https://commons.wikimedia.org/wiki/File:Closed_window_shutters.jpg,Public-Domain,closed exterior shutters
+04_window/window_closed_02.jpg,window_state,closed,P4,https://commons.wikimedia.org/wiki/File:Window_on_white_wall.jpg,Public-Domain,closed exterior window
+04_window/window_closed_building_03.jpg,window_state,closed,P4,https://universe.roboflow.com/smart-buildings/window-detection-tzxgz,CC-BY-4.0,multiple closed windows; state manually verified
+04_window/window_closed_building_04.jpg,window_state,closed,P4,https://universe.roboflow.com/smart-buildings/window-detection-tzxgz,CC-BY-4.0,multiple closed windows; state manually verified
+05_wall_crack/wall_crack_yes_01.jpg,wall_crack,yes,P5,https://universe.roboflow.com/university-bswxt/crack-bphdr,Public-Domain,clear branching wall crack
+05_wall_crack/wall_crack_yes_02.jpg,wall_crack,yes,P5,https://universe.roboflow.com/university-bswxt/crack-bphdr,Public-Domain,clear horizontal wall crack
+05_wall_crack/wall_crack_yes_03.jpg,wall_crack,yes,P5,https://universe.roboflow.com/university-bswxt/crack-bphdr,Public-Domain,clear vertical wall crack
+05_wall_crack/wall_crack_yes_04.jpg,wall_crack,yes,P5,https://universe.roboflow.com/university-bswxt/crack-bphdr,Public-Domain,wide branching wall crack
+05_wall_crack/wall_crack_no_normal.jpg,wall_crack,no,P5,https://commons.wikimedia.org/wiki/File:Wall-Image.jpg,CC0-1.0,normal wall with picture-frame edges as hard negatives

@@ -1,0 +1,6 @@
+datasets:
+  - name: state-recognition
+    modality: image
+    path: .
+    json_path: /home/gzz/Codes/smolvlm2/data/example/annotations.json
+    sampling_strategy: all
